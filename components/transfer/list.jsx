@@ -133,7 +133,8 @@ export default {
         const { renderedText } = renderedItem;
 
         // Filter skip
-        if (filterValue && filterValue.trim() && !this.matchFilter(renderedText, item)) {
+        // filterValue && filterValue.trim() &&
+        if (!this.matchFilter(renderedText, item)) {
           return null;
         }
 
@@ -257,9 +258,9 @@ export default {
     },
     matchFilter(text, item) {
       const { filterValue } = this.$data;
-      const { filterOption } = this.$props;
+      const { filterOption, direction } = this.$props;
       if (filterOption) {
-        return filterOption(filterValue, item);
+        return filterOption(filterValue, item, direction);
       }
       return text.indexOf(filterValue) >= 0;
     },

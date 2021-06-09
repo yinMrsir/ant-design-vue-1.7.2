@@ -32,8 +32,6 @@
     "compile": "node antd-tools/cli/run.js compile",
     "pub": "node antd-tools/cli/run.js pub",
     "pub-with-ci": "node antd-tools/cli/run.js pub-with-ci",
-    "prepublish": "node antd-tools/cli/run.js guard",
-    "pre-publish": "node ./scripts/prepub",
     "prettier": "prettier -c --write '**/*'",
     "pretty-quick": "pretty-quick",
     "dist": "node antd-tools/cli/run.js dist",
@@ -46,11 +44,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vueComponent/ant-design-vue.git"
+    "url": "git+https://github.com/yinMrsir/ant-design-vue-1.7.2-modified.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vueComponent/ant-design-vue/issues"
+    "url": "https://github.com/yinMrsir/ant-design-vue-1.7.2-modified/issues"
   },
   "homepage": "https://www.antdv.com/",
   "peerDependencies": {
